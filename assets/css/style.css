@@ -1,0 +1,273 @@
+/* Global Rules */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Navbar section */
+
+.mynav {
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.mynav .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.fixed-top {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+
+/* Home section */
+
+.home {
+    padding-top: 56px;
+    background: url("../imgs/home-bg.jpeg") center center fixed no-repeat;
+    height: 100vh;
+}
+
+.home>.container {
+    height: 100vh;
+}
+
+.home .btn-primary {
+    background-color: transparent;
+    border: none;
+}
+
+.home button[type="button"]:hover,
+.home button[type="submit"]:hover {
+    background-color: #fff !important;
+}
+
+
+/* Companies section */
+
+.companies {
+    background-color: #B28AF8;
+}
+
+.companies .companies-card {
+    margin-bottom: 6rem !important;
+}
+
+
+/* Agency section */
+
+.agency {
+    background: url("../imgs/agency-bg.png") center center no-repeat;
+    background-size: cover;
+}
+
+.agency .companies-card {
+    background-color: #B28AF8;
+}
+
+.more-info {
+    right: 0%;
+    bottom: 0%;
+    border-top-left-radius: 1rem;
+    cursor: pointer;
+}
+
+.blog-article .more-info {
+    right: -1%;
+    bottom: -1%;
+}
+
+.agency .agency-card .media {
+    border-radius: 1.5rem;
+}
+
+#portfolio .card,
+#blog-article .card {
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+
+/* Footer section */
+
+footer {
+    background: url("../imgs/Footer-bg.png") center center no-repeat;
+    background-size: cover;
+}
+
+footer .footer-float-img {
+    left: 0;
+    top: -8%;
+    width: 250px;
+}
+
+footer .subscribe-btn {
+    width: 80%;
+    margin: auto;
+    background-color: #C4A3FD;
+    border: 1px solid #fff;
+}
+
+footer .subscribe-btn input[type="email"]::placeholder {
+    color: #fff;
+    text-align: left;
+}
+
+footer .subscribe-btn .form-group {
+    flex-basis: 68%;
+}
+
+footer .subscribe-btn button[type="submit"] {
+    flex-basis: 30%;
+}
+
+footer .subscribe-btn input[type=email] {
+    background: transparent;
+    border: none;
+}
+
+
+/* Sitemap */
+
+.sitmap li {
+    margin: 1rem 0;
+}
+
+.sitmap li a {
+    color: #fff;
+}
+
+
+/* My framework */
+
+.m-color {
+    color: #B28AF8;
+}
+
+.m-color-bg {
+    background-color: #B28AF8;
+}
+
+.s-color-bg {
+    background-color: #956AE1;
+}
+
+.p-section {
+    padding: 4rem 0;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.to .prev>div,
+.to .next>div {
+    width: 50px;
+    height: 50px;
+}
+
+.to .prev>div a,
+.to .next>div a {
+    width: 100%;
+    height: 100%;
+}
+
+.body-scrolled {
+    background-color: #956AE1;
+}
+
+button[type="button"]:hover,
+button[type="submit"]:hover {
+    background-color: #fff !important;
+    color: #956AE1 !important;
+}
+
+.for-line h4::before {
+    position: absolute;
+    content: "";
+    left: -15%;
+    top: 53%;
+    width: 53px;
+    height: 2px;
+    background-color: #C4A3FD;
+}
+
+.companies-info-nums .num {
+    border-right: 2px solid #C4A3FD;
+    padding: 0;
+}
+
+.between-section {
+    padding: 5rem 0;
+}
+
+
+/* Media */
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 576px) {
+    footer .footer-float-img {
+        left: 0;
+        top: -8%;
+        width: 45%;
+    }
+    footer img[src="./assets/imgs/subscribe.png"] {
+        width: 25%;
+    }
+    .mynav .navbar-brand {
+        margin-left: 16px !important;
+    }
+    div#navbarSupportedContent {
+        background: #956AE1;
+        padding: 1rem;
+    }
+    .home {
+        padding-top: 90px;
+        background: url("../imgs/home-bg.jpeg") fixed no-repeat;
+        height: 100vh;
+    }
+    .companies {
+        padding-top: 9rem;
+    }
+    .img-box img {
+        width: 300px;
+        margin-bottom: 4rem;
+    }
+    #portfolio .card,
+    #blog-article .card {
+        border-radius: 31px;
+        overflow: hidden;
+    }
+    footer .footer-float-img {
+        left: 0;
+        top: -8%;
+        width: 180px;
+    }
+    footer .subscribe-btn input[type="email"]::placeholder {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .companies-info-nums .num {
+        border-bottom: 2px solid #C4A3FD;
+        border-right: none;
+        padding: 0;
+        width: 50%;
+        margin: auto;
+    }
+    .companies-info-nums {
+        border-radius: 10rem !important;
+    }
+    #portfolio .card,
+    #blog-article .card {
+        border-radius: 54px !important;
+    }
+}
