@@ -30,6 +30,7 @@
 .home {
     padding-top: 56px;
     background: url("../imgs/home-bg.jpeg") center center fixed no-repeat;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -181,12 +182,6 @@ footer .subscribe-btn input[type=email] {
     background-color: #956AE1;
 }
 
-button[type="button"]:hover,
-button[type="submit"]:hover {
-    background-color: #fff !important;
-    color: #956AE1 !important;
-}
-
 .for-line h4::before {
     position: absolute;
     content: "";
@@ -204,6 +199,16 @@ button[type="submit"]:hover {
 
 .between-section {
     padding: 5rem 0;
+}
+
+button[type="button"]:hover,
+button[type="submit"]:hover {
+    background-color: transparent !important;
+}
+
+.home button[type="button"]:hover,
+.home button[type="submit"]:hover {
+    background-color: transparent !important;
 }
 
 
@@ -231,6 +236,7 @@ button[type="submit"]:hover {
     .home {
         padding-top: 90px;
         background: url("../imgs/home-bg.jpeg") fixed no-repeat;
+        background-size: cover;
         height: 100vh;
     }
     .companies {
